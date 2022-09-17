@@ -454,9 +454,9 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 1829984;
+		ZEND = 62496;
 		NUMERATOR = 1097;
-		DENOMINATOR = 1829984;
+		DENOMINATOR = 62496;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -468,7 +468,7 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		INTERVAL_TYPE = HALF_GRID;
 	}
 	LINE{
-		SIGNAL = "CLK";
+		SIGNAL = "Add_Sub";
 		INDEX = 0;
 		FORMAT = E;
 		SCALE = 1;
@@ -476,7 +476,7 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "CLR";
+		SIGNAL = "cIn";
 		INDEX = 1;
 		FORMAT = E;
 		SCALE = 1;
@@ -484,23 +484,23 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "WriteEn";
+		SIGNAL = "DataA";
 		INDEX = 2;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Data";
-		INDEX = 3;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Data[7]";
+		SIGNAL = "DataA[7]";
+		INDEX = 3;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataA[6]";
 		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
@@ -508,7 +508,7 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Data[6]";
+		SIGNAL = "DataA[5]";
 		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
@@ -516,7 +516,7 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Data[5]";
+		SIGNAL = "DataA[4]";
 		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
@@ -524,7 +524,7 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Data[4]";
+		SIGNAL = "DataA[3]";
 		INDEX = 7;
 		FORMAT = E;
 		SCALE = 1;
@@ -532,7 +532,7 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Data[3]";
+		SIGNAL = "DataA[2]";
 		INDEX = 8;
 		FORMAT = E;
 		SCALE = 1;
@@ -540,7 +540,7 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Data[2]";
+		SIGNAL = "DataA[1]";
 		INDEX = 9;
 		FORMAT = E;
 		SCALE = 1;
@@ -548,7 +548,7 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Data[1]";
+		SIGNAL = "DataA[0]";
 		INDEX = 10;
 		FORMAT = E;
 		SCALE = 1;
@@ -556,23 +556,23 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Data[0]";
+		SIGNAL = "DataB";
 		INDEX = 11;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "WriteAddr";
-		INDEX = 12;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "WriteAddr[1]";
+		SIGNAL = "DataB[7]";
+		INDEX = 12;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataB[6]";
 		INDEX = 13;
 		FORMAT = E;
 		SCALE = 1;
@@ -580,7 +580,7 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "WriteAddr[0]";
+		SIGNAL = "DataB[5]";
 		INDEX = 14;
 		FORMAT = E;
 		SCALE = 1;
@@ -588,15 +588,15 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ReadAddr";
+		SIGNAL = "DataB[4]";
 		INDEX = 15;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ReadAddr[1]";
+		SIGNAL = "DataB[3]";
 		INDEX = 16;
 		FORMAT = E;
 		SCALE = 1;
@@ -604,7 +604,7 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ReadAddr[0]";
+		SIGNAL = "DataB[2]";
 		INDEX = 17;
 		FORMAT = E;
 		SCALE = 1;
@@ -612,15 +612,15 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Q";
+		SIGNAL = "DataB[1]";
 		INDEX = 18;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Q[7]";
+		SIGNAL = "DataB[0]";
 		INDEX = 19;
 		FORMAT = E;
 		SCALE = 1;
@@ -628,15 +628,15 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Q[6]";
+		SIGNAL = "Out";
 		INDEX = 20;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Q[5]";
+		SIGNAL = "Out[7]";
 		INDEX = 21;
 		FORMAT = E;
 		SCALE = 1;
@@ -644,7 +644,7 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Q[4]";
+		SIGNAL = "Out[6]";
 		INDEX = 22;
 		FORMAT = E;
 		SCALE = 1;
@@ -652,7 +652,7 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Q[3]";
+		SIGNAL = "Out[5]";
 		INDEX = 23;
 		FORMAT = E;
 		SCALE = 1;
@@ -660,7 +660,7 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Q[2]";
+		SIGNAL = "Out[4]";
 		INDEX = 24;
 		FORMAT = E;
 		SCALE = 1;
@@ -668,7 +668,7 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Q[1]";
+		SIGNAL = "Out[3]";
 		INDEX = 25;
 		FORMAT = E;
 		SCALE = 1;
@@ -676,8 +676,307 @@ VECTOR("E:/Computer Component Experiments/db/COExp.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Q[0]";
+		SIGNAL = "Out[2]";
 		INDEX = 26;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Out[1]";
+		INDEX = 27;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Out[0]";
+		INDEX = 28;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "cOut";
+		INDEX = 29;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Overflow";
+		INDEX = 30;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+}
+
+VECTOR("E:/Computer Component Experiments/test_Plus_Minus.vwf")
+{
+	ZOOM{
+		ZBEGIN = 0;
+		ZEND = 15625;
+		NUMERATOR = 1302;
+		DENOMINATOR = 15625;
+		TOP_INDEX = 0;
+	}
+	CLOCK{
+		PERIOD = 62500;
+		OFFSET = 0;
+		DUTY_CYCLE = 50;
+	}
+	RANDOM_VALUE{
+		INTERVAL_TYPE = HALF_GRID;
+	}
+	LINE{
+		SIGNAL = "Add_Sub";
+		INDEX = 0;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "cIn";
+		INDEX = 1;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataA";
+		INDEX = 2;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataA[7]";
+		INDEX = 3;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataA[6]";
+		INDEX = 4;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataA[5]";
+		INDEX = 5;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataA[4]";
+		INDEX = 6;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataA[3]";
+		INDEX = 7;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataA[2]";
+		INDEX = 8;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataA[1]";
+		INDEX = 9;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataA[0]";
+		INDEX = 10;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataB";
+		INDEX = 11;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataB[7]";
+		INDEX = 12;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataB[6]";
+		INDEX = 13;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataB[5]";
+		INDEX = 14;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataB[4]";
+		INDEX = 15;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataB[3]";
+		INDEX = 16;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataB[2]";
+		INDEX = 17;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataB[1]";
+		INDEX = 18;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "DataB[0]";
+		INDEX = 19;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Out";
+		INDEX = 20;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Out[7]";
+		INDEX = 21;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Out[6]";
+		INDEX = 22;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Out[5]";
+		INDEX = 23;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Out[4]";
+		INDEX = 24;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Out[3]";
+		INDEX = 25;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Out[2]";
+		INDEX = 26;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Out[1]";
+		INDEX = 27;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Out[0]";
+		INDEX = 28;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "cOut";
+		INDEX = 29;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Overflow";
+		INDEX = 30;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

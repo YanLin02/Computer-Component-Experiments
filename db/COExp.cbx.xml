@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="COExp">
-		<CBX_INST_ENTRY INSTANCE_NAME="|REGs|lpm_decode0:inst|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_7uf.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|REGs|lpm_mux3:inst6|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_8qc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|Plus_Minus:inst|lpm_add_sub0:inst|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_q4i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|lpm_mux3:inst4|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_8qc.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
