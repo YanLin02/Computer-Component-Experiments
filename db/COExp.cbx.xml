@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="COExp">
-		<CBX_INST_ENTRY INSTANCE_NAME="|BUS|MEM:inst|lpm_mux0:inst2|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_5qc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|BUS|MEM:inst|lpm_ram_dq0:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_gof1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|BUS|MEM:inst|lpm_rom0:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_r1f1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MEM|lpm_mux0:inst2|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_5qc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MEM|lpm_ram_dq0:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_gof1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MEM|lpm_rom0:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_r1f1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
