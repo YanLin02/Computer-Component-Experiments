@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16Q240C8
-set_global_assignment -name TOP_LEVEL_ENTITY MEM
+set_global_assignment -name TOP_LEVEL_ENTITY DataPath
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:48:45  SEPTEMBER 08, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
@@ -77,9 +77,15 @@ set_global_assignment -name BDF_FILE BUS.bdf
 set_global_assignment -name QIP_FILE lpm_dff1.qip
 set_global_assignment -name QIP_FILE lpm_bustri0.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE test_BUS.vwf
+set_global_assignment -name BDF_FILE DataPath.bdf
+set_global_assignment -name MIF_FILE DataPath_ROM_init.mif
+set_global_assignment -name QIP_FILE lpm_rom1.qip
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name QIP_FILE lpm_counter0.qip
+set_global_assignment -name QIP_FILE lpm_mux1.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE test_DataPath.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE test_DataPath.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE test_MEM.vwf
