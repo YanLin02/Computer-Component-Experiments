@@ -2039,7 +2039,7 @@ VECTOR("E:/Computer Component Experiments/test_DataPath.vwf")
 		ZBEGIN = 0;
 		ZEND = 493274;
 		NUMERATOR = 1247;
-		DENOMINATOR = 1000000;
+		DENOMINATOR = 493274;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
