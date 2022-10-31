@@ -1,5 +1,5 @@
 Simulator report for COExp
-Wed Oct 26 20:54:53 2022
+Mon Oct 31 16:28:51 2022
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -47,8 +47,8 @@ applicable agreement for further details.
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
 ; Simulation Netlist Size     ; 506 nodes    ;
-; Simulation Coverage         ;      68.23 % ;
-; Total Number of Transitions ; 5921         ;
+; Simulation Coverage         ;      67.25 % ;
+; Total Number of Transitions ; 6258         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone III  ;
 +-----------------------------+--------------+
@@ -103,13 +103,13 @@ Please refer to fitter text-based report (*.fit.rpt) to view logical memory repo
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      68.23 % ;
+; Total coverage as a percentage                      ;      67.25 % ;
 ; Total nodes checked                                 ; 506          ;
 ; Total output ports checked                          ; 513          ;
-; Total output ports with complete 1/0-value coverage ; 350          ;
+; Total output ports with complete 1/0-value coverage ; 345          ;
 ; Total output ports with no 1/0-value coverage       ; 135          ;
-; Total output ports with no 1-value coverage         ; 149          ;
-; Total output ports with no 0-value coverage         ; 149          ;
+; Total output ports with no 1-value coverage         ; 153          ;
+; Total output ports with no 0-value coverage         ; 150          ;
 +-----------------------------------------------------+--------------+
 
 
@@ -168,8 +168,9 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |DataPath|lpm_dff1:inst6|lpm_ff:lpm_ff_component|dffs[3]                                                                   ; |DataPath|lpm_dff1:inst6|lpm_ff:lpm_ff_component|dffs[3]                                                                   ; regout           ;
 ; |DataPath|lpm_dff1:inst6|lpm_ff:lpm_ff_component|dffs[2]                                                                   ; |DataPath|lpm_dff1:inst6|lpm_ff:lpm_ff_component|dffs[2]                                                                   ; regout           ;
 ; |DataPath|lpm_dff1:inst6|lpm_ff:lpm_ff_component|dffs[0]                                                                   ; |DataPath|lpm_dff1:inst6|lpm_ff:lpm_ff_component|dffs[0]                                                                   ; regout           ;
-; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[1]~0                                 ; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[1]~0                                 ; out0             ;
+; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[1]~1                                 ; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[1]~1                                 ; out0             ;
 ; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[1]                                   ; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[1]                                   ; out0             ;
+; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[0]~2                                 ; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[0]~2                                 ; out0             ;
 ; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[0]~3                                 ; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[0]~3                                 ; out0             ;
 ; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[0]                                   ; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[0]                                   ; out0             ;
 ; |DataPath|REGs:inst|Dff_8bit:inst4|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[6]                                           ; |DataPath|REGs:inst|Dff_8bit:inst4|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[6]                                           ; regout           ;
@@ -258,14 +259,10 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |DataPath|REGs:inst|lpm_mux3:inst6|lpm_mux:lpm_mux_component|mux_8qc:auto_generated|_~143                                  ; |DataPath|REGs:inst|lpm_mux3:inst6|lpm_mux:lpm_mux_component|mux_8qc:auto_generated|_~143                                  ; out0             ;
 ; |DataPath|REGs:inst|lpm_mux3:inst6|lpm_mux:lpm_mux_component|mux_8qc:auto_generated|result_node[0]~15                      ; |DataPath|REGs:inst|lpm_mux3:inst6|lpm_mux:lpm_mux_component|mux_8qc:auto_generated|result_node[0]~15                      ; out0             ;
 ; |DataPath|REGs:inst|lpm_mux3:inst6|lpm_mux:lpm_mux_component|mux_8qc:auto_generated|result_node[0]                         ; |DataPath|REGs:inst|lpm_mux3:inst6|lpm_mux:lpm_mux_component|mux_8qc:auto_generated|result_node[0]                         ; out0             ;
-; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[7]                                                       ; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[7]                                                       ; out              ;
 ; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[6]                                                       ; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[6]                                                       ; out              ;
 ; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[5]                                                       ; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[5]                                                       ; out              ;
-; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[4]                                                       ; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[4]                                                       ; out              ;
 ; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[3]                                                       ; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[3]                                                       ; out              ;
 ; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[2]                                                       ; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[2]                                                       ; out              ;
-; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[1]                                                       ; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[1]                                                       ; out              ;
-; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[0]                                                       ; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[0]                                                       ; out              ;
 ; |DataPath|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_tqj:auto_generated|counter_reg_bit[7]~0                ; |DataPath|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_tqj:auto_generated|counter_reg_bit[7]~0                ; out0             ;
 ; |DataPath|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_tqj:auto_generated|counter_reg_bit[6]~1                ; |DataPath|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_tqj:auto_generated|counter_reg_bit[6]~1                ; out0             ;
 ; |DataPath|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_tqj:auto_generated|counter_reg_bit[5]~2                ; |DataPath|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_tqj:auto_generated|counter_reg_bit[5]~2                ; out0             ;
@@ -412,7 +409,6 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |DataPath|lpm_dff1:inst14|lpm_ff:lpm_ff_component|dffs[1]                                                                  ; |DataPath|lpm_dff1:inst14|lpm_ff:lpm_ff_component|dffs[1]                                                                  ; regout           ;
 ; |DataPath|lpm_dff1:inst14|lpm_ff:lpm_ff_component|dffs[0]                                                                  ; |DataPath|lpm_dff1:inst14|lpm_ff:lpm_ff_component|dffs[0]                                                                  ; regout           ;
 ; |DataPath|lpm_rom1:inst3|altsyncram:altsyncram_component|altsyncram_m0g1:auto_generated|ram_block1a0                       ; |DataPath|lpm_rom1:inst3|altsyncram:altsyncram_component|altsyncram_m0g1:auto_generated|q_a[0]                             ; portadataout0    ;
-; |DataPath|lpm_rom1:inst3|altsyncram:altsyncram_component|altsyncram_m0g1:auto_generated|ram_block1a1                       ; |DataPath|lpm_rom1:inst3|altsyncram:altsyncram_component|altsyncram_m0g1:auto_generated|q_a[1]                             ; portadataout0    ;
 ; |DataPath|lpm_rom1:inst3|altsyncram:altsyncram_component|altsyncram_m0g1:auto_generated|ram_block1a2                       ; |DataPath|lpm_rom1:inst3|altsyncram:altsyncram_component|altsyncram_m0g1:auto_generated|q_a[2]                             ; portadataout0    ;
 ; |DataPath|lpm_rom1:inst3|altsyncram:altsyncram_component|altsyncram_m0g1:auto_generated|ram_block1a3                       ; |DataPath|lpm_rom1:inst3|altsyncram:altsyncram_component|altsyncram_m0g1:auto_generated|q_a[3]                             ; portadataout0    ;
 ; |DataPath|lpm_rom1:inst3|altsyncram:altsyncram_component|altsyncram_m0g1:auto_generated|ram_block1a4                       ; |DataPath|lpm_rom1:inst3|altsyncram:altsyncram_component|altsyncram_m0g1:auto_generated|q_a[4]                             ; portadataout0    ;
@@ -425,7 +421,6 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |DataPath|lpm_dff1:inst5|lpm_ff:lpm_ff_component|dffs[4]                                                                   ; |DataPath|lpm_dff1:inst5|lpm_ff:lpm_ff_component|dffs[4]                                                                   ; regout           ;
 ; |DataPath|lpm_dff1:inst5|lpm_ff:lpm_ff_component|dffs[3]                                                                   ; |DataPath|lpm_dff1:inst5|lpm_ff:lpm_ff_component|dffs[3]                                                                   ; regout           ;
 ; |DataPath|lpm_dff1:inst5|lpm_ff:lpm_ff_component|dffs[2]                                                                   ; |DataPath|lpm_dff1:inst5|lpm_ff:lpm_ff_component|dffs[2]                                                                   ; regout           ;
-; |DataPath|lpm_dff1:inst5|lpm_ff:lpm_ff_component|dffs[1]                                                                   ; |DataPath|lpm_dff1:inst5|lpm_ff:lpm_ff_component|dffs[1]                                                                   ; regout           ;
 ; |DataPath|lpm_dff1:inst5|lpm_ff:lpm_ff_component|dffs[0]                                                                   ; |DataPath|lpm_dff1:inst5|lpm_ff:lpm_ff_component|dffs[0]                                                                   ; regout           ;
 ; |DataPath|lpm_bustri0:inst12|lpm_bustri:lpm_bustri_component|dout[7]                                                       ; |DataPath|lpm_bustri0:inst12|lpm_bustri:lpm_bustri_component|dout[7]                                                       ; out              ;
 ; |DataPath|lpm_bustri0:inst12|lpm_bustri:lpm_bustri_component|dout[6]                                                       ; |DataPath|lpm_bustri0:inst12|lpm_bustri:lpm_bustri_component|dout[6]                                                       ; out              ;
@@ -484,7 +479,7 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |DataPath|PC[6]                                                                                                            ; |DataPath|PC[6]                                                                                                            ; pin_out          ;
 ; |DataPath|PC[4]                                                                                                            ; |DataPath|PC[4]                                                                                                            ; pin_out          ;
 ; |DataPath|PC[3]                                                                                                            ; |DataPath|PC[3]                                                                                                            ; pin_out          ;
-; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[0]~2                                 ; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[0]~2                                 ; out0             ;
+; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[1]~0                                 ; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[1]~0                                 ; out0             ;
 ; |DataPath|REGs:inst|Dff_8bit:inst5|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[7]                                           ; |DataPath|REGs:inst|Dff_8bit:inst5|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[7]                                           ; regout           ;
 ; |DataPath|REGs:inst|Dff_8bit:inst5|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[6]                                           ; |DataPath|REGs:inst|Dff_8bit:inst5|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[6]                                           ; regout           ;
 ; |DataPath|REGs:inst|Dff_8bit:inst5|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[5]                                           ; |DataPath|REGs:inst|Dff_8bit:inst5|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[5]                                           ; regout           ;
@@ -557,6 +552,10 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |DataPath|REGs:inst|lpm_mux3:inst6|lpm_mux:lpm_mux_component|mux_8qc:auto_generated|result_node[0]~14                      ; |DataPath|REGs:inst|lpm_mux3:inst6|lpm_mux:lpm_mux_component|mux_8qc:auto_generated|result_node[0]~14                      ; out0             ;
 ; |DataPath|REGs:inst|lpm_mux3:inst6|lpm_mux:lpm_mux_component|mux_8qc:auto_generated|_~136                                  ; |DataPath|REGs:inst|lpm_mux3:inst6|lpm_mux:lpm_mux_component|mux_8qc:auto_generated|_~136                                  ; out0             ;
 ; |DataPath|REGs:inst|lpm_mux3:inst6|lpm_mux:lpm_mux_component|mux_8qc:auto_generated|_~138                                  ; |DataPath|REGs:inst|lpm_mux3:inst6|lpm_mux:lpm_mux_component|mux_8qc:auto_generated|_~138                                  ; out0             ;
+; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[7]                                                       ; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[7]                                                       ; out              ;
+; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[4]                                                       ; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[4]                                                       ; out              ;
+; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[1]                                                       ; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[1]                                                       ; out              ;
+; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[0]                                                       ; |DataPath|lpm_bustri0:inst13|lpm_bustri:lpm_bustri_component|dout[0]                                                       ; out              ;
 ; |DataPath|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_tqj:auto_generated|counter_comb_bita3                  ; |DataPath|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_tqj:auto_generated|counter_comb_bita3~COUT             ; cout             ;
 ; |DataPath|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_tqj:auto_generated|counter_comb_bita4                  ; |DataPath|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_tqj:auto_generated|counter_comb_bita4                  ; combout          ;
 ; |DataPath|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_tqj:auto_generated|counter_comb_bita4                  ; |DataPath|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_tqj:auto_generated|counter_comb_bita4~COUT             ; cout             ;
@@ -647,8 +646,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |DataPath|RS[1]                                                                                                            ; |DataPath|RS[1]                                                                                                            ; pin_out          ;
 ; |DataPath|lpm_dff1:inst6|lpm_ff:lpm_ff_component|dffs[6]                                                                   ; |DataPath|lpm_dff1:inst6|lpm_ff:lpm_ff_component|dffs[6]                                                                   ; regout           ;
 ; |DataPath|lpm_dff1:inst6|lpm_ff:lpm_ff_component|dffs[1]                                                                   ; |DataPath|lpm_dff1:inst6|lpm_ff:lpm_ff_component|dffs[1]                                                                   ; regout           ;
-; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[1]~1                                 ; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[1]~1                                 ; out0             ;
-; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[0]~2                                 ; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[0]~2                                 ; out0             ;
+; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[1]~0                                 ; |DataPath|lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated|result_node[1]~0                                 ; out0             ;
 ; |DataPath|REGs:inst|Dff_8bit:inst5|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[7]                                           ; |DataPath|REGs:inst|Dff_8bit:inst5|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[7]                                           ; regout           ;
 ; |DataPath|REGs:inst|Dff_8bit:inst5|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[6]                                           ; |DataPath|REGs:inst|Dff_8bit:inst5|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[6]                                           ; regout           ;
 ; |DataPath|REGs:inst|Dff_8bit:inst5|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[5]                                           ; |DataPath|REGs:inst|Dff_8bit:inst5|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[5]                                           ; regout           ;
@@ -778,6 +776,8 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |DataPath|lpm_dff1:inst14|lpm_ff:lpm_ff_component|dffs[6]                                                                  ; |DataPath|lpm_dff1:inst14|lpm_ff:lpm_ff_component|dffs[6]                                                                  ; regout           ;
 ; |DataPath|lpm_dff1:inst14|lpm_ff:lpm_ff_component|dffs[4]                                                                  ; |DataPath|lpm_dff1:inst14|lpm_ff:lpm_ff_component|dffs[4]                                                                  ; regout           ;
 ; |DataPath|lpm_dff1:inst14|lpm_ff:lpm_ff_component|dffs[3]                                                                  ; |DataPath|lpm_dff1:inst14|lpm_ff:lpm_ff_component|dffs[3]                                                                  ; regout           ;
+; |DataPath|lpm_rom1:inst3|altsyncram:altsyncram_component|altsyncram_m0g1:auto_generated|ram_block1a1                       ; |DataPath|lpm_rom1:inst3|altsyncram:altsyncram_component|altsyncram_m0g1:auto_generated|q_a[1]                             ; portadataout0    ;
+; |DataPath|lpm_dff1:inst5|lpm_ff:lpm_ff_component|dffs[1]                                                                   ; |DataPath|lpm_dff1:inst5|lpm_ff:lpm_ff_component|dffs[1]                                                                   ; regout           ;
 ; |DataPath|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_tqj:auto_generated|counter_reg_bit[5]~13               ; |DataPath|lpm_counter0:inst1|lpm_counter:lpm_counter_component|cntr_tqj:auto_generated|counter_reg_bit[5]~13               ; out              ;
 ; |DataPath|ALU:inst2|Plus_Minus:inst|lpm_add_sub0:inst|lpm_add_sub:lpm_add_sub_component|add_sub_q4i:auto_generated|op_1~2  ; |DataPath|ALU:inst2|Plus_Minus:inst|lpm_add_sub0:inst|lpm_add_sub:lpm_add_sub_component|add_sub_q4i:auto_generated|op_1~2  ; out0             ;
 ; |DataPath|ALU:inst2|Plus_Minus:inst|lpm_add_sub0:inst|lpm_add_sub:lpm_add_sub_component|add_sub_q4i:auto_generated|op_1~3  ; |DataPath|ALU:inst2|Plus_Minus:inst|lpm_add_sub0:inst|lpm_add_sub:lpm_add_sub_component|add_sub_q4i:auto_generated|op_1~3  ; out0             ;
@@ -801,7 +801,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Wed Oct 26 20:54:53 2022
+    Info: Processing started: Mon Oct 31 16:28:50 2022
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off COExp -c COExp
 Info: Using vector source file "E:/Computer Component Experiments/test_DataPath.vwf"
 Info: Overwriting simulation input file with simulation results
@@ -809,13 +809,13 @@ Info: Overwriting simulation input file with simulation results
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      68.23 %
-Info: Number of transitions in simulation is 5921
+Info: Simulation coverage is      67.25 %
+Info: Number of transitions in simulation is 6258
 Info: Vector file test_DataPath.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 175 megabytes
-    Info: Processing ended: Wed Oct 26 20:54:53 2022
-    Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Processing ended: Mon Oct 31 16:28:51 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 
