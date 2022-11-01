@@ -1333,16 +1333,6 @@ applicable agreement for further details.
 	(pt 920 336)
 )
 (connector
-	(pt 656 344)
-	(pt 552 344)
-	(bus)
-)
-(connector
-	(pt 528 328)
-	(pt 656 328)
-	(bus)
-)
-(connector
 	(text "CLK" (rect 624 264 645 276)(font "Arial" ))
 	(pt 616 280)
 	(pt 656 280)
@@ -1368,27 +1358,6 @@ applicable agreement for further details.
 	(pt 464 296)
 )
 (connector
-	(pt 352 336)
-	(pt 352 400)
-	(bus)
-)
-(connector
-	(pt 552 344)
-	(pt 552 400)
-	(bus)
-)
-(connector
-	(pt 352 400)
-	(pt 552 400)
-	(bus)
-)
-(connector
-	(text "IR[1..0]" (rect 287 304 324 316)(font "Arial" ))
-	(pt 272 320)
-	(pt 392 320)
-	(bus)
-)
-(connector
 	(pt 1040 280)
 	(pt 960 280)
 	(bus)
@@ -1407,17 +1376,6 @@ applicable agreement for further details.
 	(text "GRout" (rect 337 232 368 244)(font "Arial" ))
 	(pt 328 248)
 	(pt 368 248)
-)
-(connector
-	(text "IR[3..2]" (rect 289 320 326 332)(font "Arial" ))
-	(pt 272 336)
-	(pt 352 336)
-	(bus)
-)
-(connector
-	(pt 352 336)
-	(pt 392 336)
-	(bus)
 )
 (connector
 	(pt 1040 280)
@@ -1449,6 +1407,29 @@ applicable agreement for further details.
 	(pt 1040 280)
 	(bus)
 )
+(connector
+	(pt 528 328)
+	(pt 656 328)
+	(bus)
+)
+(connector
+	(text "IR[3..2]" (rect 609 328 646 340)(font "Arial" ))
+	(pt 600 344)
+	(pt 656 344)
+	(bus)
+)
+(connector
+	(text "IR[3..2]" (rect 337 304 374 316)(font "Arial" ))
+	(pt 392 320)
+	(pt 320 320)
+	(bus)
+)
+(connector
+	(text "IR[1..0]" (rect 335 320 372 332)(font "Arial" ))
+	(pt 320 336)
+	(pt 392 336)
+	(bus)
+)
 (junction (pt 1040 224))
 (junction (pt 1472 344))
 (junction (pt 1040 976))
@@ -1459,7 +1440,6 @@ applicable agreement for further details.
 (junction (pt 1040 472))
 (junction (pt 1040 856))
 (junction (pt 1040 872))
-(junction (pt 352 336))
 (junction (pt 1040 280))
 (junction (pt 1040 240))
 (text "GPRs" (rect 1000 256 1031 270)(font "Arial" (font_size 8)))

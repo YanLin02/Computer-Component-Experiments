@@ -3830,26 +3830,6 @@ lpm_dff1:inst6|lpm_ff:lpm_ff_component
 
 # end
 # entity
-DataPath
-# storage
-db|COExp.(38).cnf
-db|COExp.(38).cnf
-# case_insensitive
-# source_file
-datapath.bdf
-cb2560bdacdf86fc18b108917d9fc9
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 lpm_rom1
 # storage
 db|COExp.(39).cnf
@@ -4205,82 +4185,6 @@ address_a0
 }
 # hierarchies {
 lpm_rom1:inst3|altsyncram:altsyncram_component
-}
-# macro_sequence
-
-# end
-# entity
-altsyncram_m0g1
-# storage
-db|COExp.(41).cnf
-db|COExp.(41).cnf
-# case_insensitive
-# source_file
-db|altsyncram_m0g1.tdf
-f07096f4409f9efdbab1ef1b29bfec93
-7
-# used_port {
-q_a7
--1
-3
-q_a6
--1
-3
-q_a5
--1
-3
-q_a4
--1
-3
-q_a3
--1
-3
-q_a2
--1
-3
-q_a1
--1
-3
-q_a0
--1
-3
-clocken0
--1
-3
-clock0
--1
-3
-address_a7
--1
-3
-address_a6
--1
-3
-address_a5
--1
-3
-address_a4
--1
-3
-address_a3
--1
-3
-address_a2
--1
-3
-address_a1
--1
-3
-address_a0
--1
-3
-}
-# memory_file {
-datapath_rom_init.mif
-849eb6f3219d801a37e42f4b7e64333
-}
-# hierarchies {
-lpm_rom1:inst3|altsyncram:altsyncram_component|altsyncram_m0g1:auto_generated
 }
 # macro_sequence
 
@@ -4756,6 +4660,102 @@ data0
 }
 # hierarchies {
 lpm_mux1:inst4|lpm_mux:lpm_mux_component|mux_vpc:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+DataPath
+# storage
+db|COExp.(38).cnf
+db|COExp.(38).cnf
+# case_insensitive
+# source_file
+datapath.bdf
+251f4f12edec656bf28cf414e8888699
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+altsyncram_m0g1
+# storage
+db|COExp.(41).cnf
+db|COExp.(41).cnf
+# case_insensitive
+# source_file
+db|altsyncram_m0g1.tdf
+f07096f4409f9efdbab1ef1b29bfec93
+7
+# used_port {
+q_a7
+-1
+3
+q_a6
+-1
+3
+q_a5
+-1
+3
+q_a4
+-1
+3
+q_a3
+-1
+3
+q_a2
+-1
+3
+q_a1
+-1
+3
+q_a0
+-1
+3
+clocken0
+-1
+3
+clock0
+-1
+3
+address_a7
+-1
+3
+address_a6
+-1
+3
+address_a5
+-1
+3
+address_a4
+-1
+3
+address_a3
+-1
+3
+address_a2
+-1
+3
+address_a1
+-1
+3
+address_a0
+-1
+3
+}
+# memory_file {
+datapath_rom_init.mif
+fa24b3eb55c3ff897e5533d51cebf2a1
+}
+# hierarchies {
+lpm_rom1:inst3|altsyncram:altsyncram_component|altsyncram_m0g1:auto_generated
 }
 # macro_sequence
 
