@@ -2037,9 +2037,9 @@ VECTOR("E:/Computer Component Experiments/test_DataPath.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 500000;
+		ZEND = 1000000;
 		NUMERATOR = 1247;
-		DENOMINATOR = 500000;
+		DENOMINATOR = 1000000;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
